@@ -48,7 +48,7 @@ for(int i = 0; i < n; i++){
 cout << dp[n-1][m-1] << endl;
 ```
 
-The above spinet of code was based on [Errichto's](https://codeforces.com/profile/Errichto) code in this youtube [video](https://www.youtube.com/watch?v=FAQxdm0bTaw&t=3960s). For a more conventional but less readable snippet:
+The above spinet of code was based on [Errichto's](https://codeforces.com/profile/Errichto) , found in this youtube [video](https://www.youtube.com/watch?v=FAQxdm0bTaw&t=3960s). For a more conventional but less readable snippet:
 
 ```cpp
 //vector<vector<char>> g(n, vector<char>(m));
@@ -64,7 +64,7 @@ for(int i = 0; i < n; i++){
         if(i+1 < n && j < m && g[i+1][j] == '.')
             dp[i+1][j] = (dp[i+1][j] % MOD + dp[i][j] % MOD) % MOD;
     }
-    }
+}
 
 cout << dp[n-1][m-1] << endl;
 ```
